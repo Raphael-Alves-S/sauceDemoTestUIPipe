@@ -1,7 +1,7 @@
 name: Lighhouse CI
 on: [push]
 jobs:
-  lhci:
+  lhci-job:
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
