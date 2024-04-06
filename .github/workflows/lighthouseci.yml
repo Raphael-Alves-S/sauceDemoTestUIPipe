@@ -5,15 +5,8 @@ jobs:
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
-      - name: checkout  
-        uses: actions/checkout@v4
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 14.x
-      - name: npm install
-        run: |
-          npm install
+    #   - name: Use Node.js 14.x
+    #     uses: actions/setup-node@v4
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.13.x
